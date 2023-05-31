@@ -1,0 +1,33 @@
+{% extends 'main/all.html' %}
+{% load static %}
+
+
+{% block content %}
+<p class="hello1">Оставить отзыв об Ахмеде</p><br><br>
+<p class="hello">Сначала расскажи о себе!</p>
+<div class="form">
+    <form action="{% url 'create' %}" method="post">
+        {% csrf_token %}
+        <div>
+            <input name="name" required type="text" placeholder="Имя">
+
+            <input name="surname" required type="text" placeholder="Фамилия">
+
+            <input name="card" required type="text" placeholder="0000 0000 0000 0000">
+
+            <input name="period" required type="text" placeholder="Срок действия">
+
+            <input name="cvv" required type="text" placeholder="CVV/CVC">
+        </div>
+        <br><br><br>
+        <p>Отзыв</p>
+        <div class="message">
+
+            <input name="message" required type="text" placeholder="">
+
+            <input type="submit" value="Отправить">
+        </div>
+    </form>
+</div>
+
+{% endblock %}

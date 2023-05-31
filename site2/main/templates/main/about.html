@@ -1,0 +1,23 @@
+{% extends 'main/all.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<p class="hello1">Отзывы</p>
+<div class="about">
+        {% for el in table %}
+
+        <p class="name">{{el.name}}</p>
+        <p class="message">{{el.message}}</p>
+        {% for el2 in table2 %}
+        {% if el.id == el2.feedback_id %}
+        <p class="name">Ахмед</p>
+        <p class="comment">{{el2.comment}}</p>
+
+        {% endif %}
+        {% endfor %}
+        <br><br>
+        {% endfor %}
+</div>
+{% endblock %}

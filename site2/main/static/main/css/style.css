@@ -1,0 +1,209 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-style: 100%;
+   line-height: 1;
+   font-style: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style-type: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-style: inherit;
+   font-weight: 400;
+}
+
+header{
+   width:100%;
+   height: 54px;
+   text-align: right;
+   border-bottom: 1px solid;
+   position: relative;
+}
+
+header ul{
+   position: absolute;
+   right: 60px;
+   top: 18px;
+}
+
+header ul li{
+   margin: 0 40px 0 0;
+   display: inline;
+   font-size:18px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header ul li:last-child{
+      margin: 0 100px 0 0;
+}
+
+header ul li a{
+   color: black;
+}
+
+footer{
+   height: 55px;
+   width: 100%;
+   border-top: 1px solid;
+   position: absolute;
+   left:0;
+   bottom:0;
+}
+
+body{
+   position: relative;
+   height: auto;
+   min-height: 100%;
+}
+
+.form div{
+   display: inline-block;
+   margin-left: 95px;
+   margin-top: 5px;
+   border: 1px solid;
+   padding: 10px 20px;
+}
+
+input{
+   display: inline-block;
+   height: 40px;
+   border: 1px solid;
+}
+
+input:nth-child(1){
+   width: 200px;
+   margin-right: 20px;
+}
+
+input:nth-child(2){
+   width: 200px;
+}
+
+input:nth-child(3){
+   width: 425px;
+   display: block;
+   margin: 10px 0;
+}
+
+input:nth-child(4){
+   width: 200px;
+   margin-right: 20px;
+}
+
+input:nth-child(5){
+   width: 200px;
+}
+
+.hello, .hello1, form p, .message, .name, .comment{
+   margin-left: 95px;
+   font-size:18px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hello1{
+   font-weight: 500;
+   font-size:25px;
+   margin-top: 40px;
+}
+
+.form div:last-child{
+   display: inline-block;
+   margin-left: 95px;
+   margin-top: 5px;
+   border: 1px solid;
+   padding: 10px 0 10px 20px;
+}
+
+.message input:first-child{
+   width: 425px;
+   height: 200px;
+   margin-bottom: 10px;
+   display: block;
+}
+
+.about{
+   margin-top: 20px;
+}
+
+.about p{
+   line-height: 1.5;
+}
+
+.name{
+font-style: italic;
+}

@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  <title>Site</title>
+</head>
+<body>
+  <header><nav><ul>
+    <li><a href="{% url 'home' %}">Главная</a></li>
+    <li><a href="{% url 'feedback' %}">Написать отзыв</a></li>
+    <li><a href="{% url 'about' %}">Слова благодарности</a></li>
+    <li><a href="{% url 'contact' %}">Контакты</a></li>
+  </ul></nav></header>
+  {% block content %}{% endblock %}
+  <footer>
+  </footer>
+</body>
+
+</html>
